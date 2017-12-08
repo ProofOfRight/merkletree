@@ -7,7 +7,6 @@
 
 #include "merkletree/merkle_tree_math.h"
 
-using cert_trans::MerkleTreeInterface;
 using std::move;
 using std::string;
 using std::unique_ptr;

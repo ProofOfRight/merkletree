@@ -7,8 +7,6 @@
 #include <stddef.h>
 #include <string>
 
-namespace cert_trans {
-
 // An interface for Merkle trees.  See specializations in
 // merkletree/merkle_tree.h and merkletree/compact_merkle_tree.h.
 class MerkleTreeInterface {
@@ -57,7 +55,5 @@ class MerkleTreeInterface {
   // (and hence, no root).
   virtual std::string CurrentRoot() = 0;
 };
-
-}  // namespace cert_trans
 
 #endif  // CERT_TRANS_MERKLETREE_MERKLE_TREE_INTERFACE_H_

@@ -31,28 +31,4 @@ class SerialHasher {
   virtual std::unique_ptr<SerialHasher> Create() const = 0;
 };
 
-class Sha256Hasher : public SerialHasher {
- public:
-  Sha256Hasher();
-  Sha256Hasher(const Sha256Hasher&) = delete;
-  Sha256Hasher& operator=(const Sha256Hasher&) = delete;
-
-  size_t DigestSize() const {
-    return kDigestSize;
-  }
-
-  void Reset();
-  void Update(const std::string& data);
-  std::string Final();
-  std::unique_ptr<SerialHasher> Create() const;
-
-  // Create a new hasher and call Reset(), Update(), and Final().
-  static std::string Sha256Digest(const std::string& data);
-
- private:
-  SHA256_CTX ctx_;
-  bool initialized_;
-  static const size_t kDigestSize;
-};
-
 #endif  // CERT_TRANS_MERKLETREE_SERIAL_HASHER_H_

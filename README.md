@@ -8,4 +8,4 @@ Following parts of the original repository are taken:
 
 ## Usage
 
-Merkle Tree requires SerialHasher implementation, which uses some hash function to provide Update(), Final(), Reset() and DigestSize() methods. You can use Sha256Hasher in serial_hasher as a reference implementation.
+Merkle Tree requires SerialHasher implementation, which uses some hash function to provide necessary methods.

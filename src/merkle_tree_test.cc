@@ -1,4 +1,3 @@
-#include <glog/logging.h>
 #include <gtest/gtest.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -7,18 +6,19 @@
 #include <string>
 #include <vector>
 
-#include "merkletree/compact_merkle_tree.h"
 #include "merkletree/merkle_tree.h"
-#include "merkletree/merkle_verifier.h"
 #include "merkletree/serial_hasher.h"
 #include "merkletree/tree_hasher.h"
-#include "util/testing.h"
-#include "util/util.h"
 
 namespace {
 
 using std::string;
 using std::unique_ptr;
+
+void InitTesting(const char* name, int* argc, char*** argv,
+                 bool remove_flags) {
+  ::testing::InitGoogleTest(argc, *argv);
+}
 
 // REFERENCE IMPLEMENTATIONS
 
