@@ -8,4 +8,4 @@ Following parts of the original repository are taken:
 
 ## Usage
 
-Merkle Tree requires SerialHasher implementation, which uses some hash function to provide necessary methods.
+Merkle Tree requires SerialHasher implementation, which uses a hash function to provide necessary methods.
