@@ -13,14 +13,14 @@ include(cmake/functions.cmake)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+if(NOT BUILD)
+    set(BUILD  "SHARED")
+endif()
+
 ENUM(BUILD "${BUILD}" "library build type"
     SHARED
     STATIC
 )
-
-if(NOT BUILD)
-    set(BUILD  "SHARED")
-endif()
 
 add_library(merkletree ${BUILD}
     src/merkle_tree_math.cc
