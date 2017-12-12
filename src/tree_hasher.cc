@@ -9,6 +9,7 @@ using std::move;
 using std::mutex;
 using std::string;
 using std::unique_ptr;
+using namespace merkletree;
 
 namespace {
 

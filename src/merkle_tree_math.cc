@@ -2,6 +2,8 @@
 
 #include <stddef.h>
 
+using namespace merkletree;
+
 // static
 bool MerkleTreeMath::IsPowerOfTwoPlusOne(size_t leaf_count) {
   if (leaf_count == 0)

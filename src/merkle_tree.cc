@@ -10,6 +10,7 @@
 using std::move;
 using std::string;
 using std::unique_ptr;
+using namespace merkletree;
 
 MerkleTree::MerkleTree(unique_ptr<SerialHasher> hasher)
     : MerkleTreeInterface(),
