@@ -4,7 +4,7 @@ project(merkletree)
 
 include(FeatureSummary)
 
-
+SET(CMAKE_CXX_FLAGS "-std=c++1y -Wall")
 SET(CMAKE_CXX_FLAGS_RELEASE "-O3")
 SET(CMAKE_CXX_FLAGS_DEBUG   "-g -Wextra -O0 -fdiagnostics-color")
 SET(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/Modules)
