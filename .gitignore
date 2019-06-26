@@ -34,3 +34,5 @@ cmake-build*
 cmake-build*
 .gtm
 /.gtm/
+out/
+.vs/
